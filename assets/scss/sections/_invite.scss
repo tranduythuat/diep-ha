@@ -1,0 +1,78 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.invite {
+    width: 100%;
+    .content {
+        width: 100%;
+        padding-top: 10%;
+        .title {
+            font-size: 22px;
+            font-family: $font-HLT-JANEAUST;
+            line-height: 1.5;
+        }
+
+        .sub_text {
+            letter-spacing: 1.2px;
+        }
+
+        .divider {
+            margin: 8% 0 3%;
+            img {
+                max-width: 42px;
+            }
+        }
+        .location_label{
+            text-transform: uppercase;
+        }
+
+        .name {
+            margin: 3% 0;
+            text-transform: uppercase;
+        }
+
+        .map_btn {
+            img {
+                max-width: 162px;
+            }
+        }
+
+        .map_art {
+            perspective: 1000px;
+            margin-top: 10%;
+            img {
+                max-width: 372px;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            .title {
+                font-size: calc((22 / 500) * 100vw);
+            }
+
+            .sub_text {
+                letter-spacing: calc((1.2 / 500) * 100vw);
+            }
+
+            .divider {
+                img {
+                    max-width: calc((42 / 500) * 100vw);
+                }
+            }
+
+            .map_btn {
+                img {
+                    max-width: calc((162 / 500) * 100vw);
+                }
+            }
+    
+            .map_art {
+                img {
+                    max-width: calc((372 / 500) * 100vw);
+                }
+            }
+        }
+    }
+}

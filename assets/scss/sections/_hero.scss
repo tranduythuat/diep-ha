@@ -1,0 +1,106 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.hero {
+    width: 100%;
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        perspective: 1000px;
+
+        img.title {
+            max-width: 266px;
+            margin: 34% 0 2%;
+        }
+
+        .names {
+            font-size: 115px;
+            font-family: $font-HLT-JANEAUST;
+            line-height: 1.2;
+            position: relative;
+            padding: 8% 0;
+            .wife-name {
+                text-align: left;
+            }
+            .husband-name {
+                text-align: right;
+                padding-right: 5%;
+            }
+            .divider {
+                position: absolute;
+                left: 24%;
+                bottom: 36%;
+                font-family: $font-SVN-Olivier;
+                font-size: 72px;
+                transform: rotate(-20deg);
+            }
+        }
+        
+        .welcome {
+            text-transform: uppercase;
+            line-height: 1.8;
+            p {
+                margin-bottom: 5%;
+                letter-spacing: 1px;
+            }
+        }
+        .banquet_table {
+            margin: 14% 0 8%;
+            img {
+                max-width: 310px;
+            }
+        }
+        .note {
+            line-height: 1.8;
+        }
+        .downward_arrow {
+            margin-top: 2%;
+            img {
+                max-width: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            .logo {
+                img {
+                    max-width: calc((94 / 500) * 100vw);
+                }
+            }
+            img.title {
+                max-width: calc((266 / 500) * 100vw);
+            }
+            
+            .welcome {
+                // font-size: calc((10 / 500) * 100vw);
+                p {
+                    letter-spacing: calc((1 / 500) * 100vw);
+                }
+            }
+            .names {
+                font-size: calc((115 / 500) * 100vw);
+                .divider {
+                    font-size: calc((72 / 500) * 100vw);
+                }
+            }
+            .banquet_table {
+                img {
+                    max-width: calc((310 / 500) * 100vw);
+                }
+            }
+            // .note {
+            //     font-size: calc((10 / 500) * 100vw);
+            // }
+            
+            .downward_arrow {
+                img {
+                    max-width: calc((20 / 500) * 100vw);
+                }
+            }
+        }
+    }
+}

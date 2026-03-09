@@ -1,0 +1,93 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.timeline {
+    width: 100%;
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15%;
+        .title {
+            font-family: $font-HLT-JANEAUST;
+            font-size: 21px;
+            letter-spacing: .8px;
+            font-weight: 300;
+            margin-bottom: 3%;
+        }
+
+        .subtext {
+            letter-spacing: .8px;
+        }
+
+        .items {
+            margin-top: 8%;
+            width: 100%;
+            .item {
+                margin-bottom: 6%;
+                .icon {
+                    @include flex-center;
+                    margin-bottom: 2%;
+                    img {
+                        max-width: 20px;
+                        width: 100%;
+                        height: auto
+                    }
+                }
+                .time {
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                    @include flex-center;
+                }
+
+                &:nth-of-type(2) .icon img {
+                    max-width: 27px;
+                }
+            }
+        }
+
+        .box-img {
+            img {
+                max-width: 220px;
+            }
+        }
+
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            .title {
+                font-size: calc((36 / 500) * 100vw);
+                letter-spacing: calc((.8 / 500) * 100vw);
+            }
+            .subtext {
+                letter-spacing: calc((.8 / 500) * 100vw);
+            }
+            .items {
+                .item {
+                    .icon {
+                        img {
+                            max-width: calc((20 / 500) * 100vw);
+                        }
+                    }
+                    .time {
+                        letter-spacing: calc((1.5 / 500) * 100vw);
+                    }
+    
+                    &:nth-of-type(2) .icon img {
+                        max-width: calc((27 / 500) * 100vw);
+                    }
+                }
+    
+            }
+
+            .box-img {
+                img {
+                    max-width: calc((220 / 500) * 100vw);
+                }
+            }
+        }
+    }
+}

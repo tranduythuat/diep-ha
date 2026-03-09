@@ -1,0 +1,103 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.countdown {
+    .content {
+        width: 100%;
+        @include flex-center;
+        flex-direction: column;
+        padding: 20% 0 15%;
+        
+        .title {
+            font-size: 22px;
+            font-family: $font-HLT-JANEAUST;
+            margin-bottom: 2%;
+        }
+
+        .sub_text {
+            margin: 1% 0 5%;
+            letter-spacing: 1.4px;
+        }
+
+        .countdown-box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+            width: 85%;
+            gap: 3%;
+    
+            .time-box {
+                text-align: center;
+                flex: 1;
+                background-color: #dddcd9ff;
+                padding: 2% 0;
+                border-radius: 10px;
+                .number {
+                    font-size: 32px;
+                    font-weight: 100;
+                    line-height: 1;
+                    transition: transform 0.3s ease, opacity 0.3s ease;
+                    font-family: $font-gothamBold;
+                }
+        
+                .label {
+                    font-size: 8.5px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .invite_text {
+            margin: 25% 0 8%;
+            img {
+                max-width: 286px;
+            }
+        }
+        .cake_img {
+            img {
+                max-width: 78px;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            .title {
+                font-size: calc((22 / 500) * 100vw);
+            }
+
+            .sub_text {
+                letter-spacing: calc((1.4 / 500) * 100vw);
+            }
+    
+            .countdown-box {
+                .time-box {
+                    .number {
+                        font-size: calc((32 / 500) * 100vw);
+                    }
+                    .label {
+                        font-size: calc((8.5 / 500) * 100vw);
+                        letter-spacing: calc((1 / 500) * 100vw);
+                    }
+                }
+        
+            }
+
+            .invite_text {
+                margin: 25% 0 8%;
+                img {
+                    max-width: calc((286 / 500) * 100vw);
+                }
+            }
+            .cake_img {
+                img {
+                    max-width: calc((78 / 500) * 100vw);
+                }
+            }
+        }
+    }
+}

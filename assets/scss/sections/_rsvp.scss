@@ -1,0 +1,354 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.rsvp {
+    width: 100%;
+
+    .content {
+        width: 100%;
+        perspective: 1000px;
+        position: relative;
+        padding-top: 15%;
+
+        .title {
+            font-size: 22px;
+            font-weight: 300;
+            font-family: $font-HLT-JANEAUST;
+            margin-bottom: 2%;
+        }
+
+        .subtext {
+            letter-spacing: .8px;
+            margin-bottom: 4%;
+        }
+
+        .rsvp-form {
+            display: block;
+            padding: 10% 6%;
+            margin: 0 6%;
+            border-radius: 10px;
+            background-color: #dddcd9ff;
+
+            .header {
+                .subtext {
+                    line-height: 1.5;
+                    margin-bottom: 8%;
+                }
+            }
+
+            .button-group {
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 8%;
+                margin-bottom: 2%;
+
+                .radio-wrapper {
+                    position: relative;
+                    height: 32px;
+                }
+
+                .radio-wrapper input[type="radio"] {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+
+                .radio-label {
+                    @include flex-center;
+                    font-size: 9.3px;
+                    text-transform: uppercase;
+                    font-family: inherit;
+                    // padding: 4% 0;
+                    height: 100%;
+                    line-height: 1;
+                    border-radius: 6px;
+                    background: #fff;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    text-align: center;
+                    border: none;
+
+                    &:hover {
+                        background: $text-color;
+                        color: white;
+                    }
+                }
+
+                .radio-wrapper input[type="radio"]:checked+.radio-label {
+                    background: $text-color;
+                    color: white;
+                }
+            }
+
+            .form-group {
+                margin-bottom: 3%;
+
+                input[type="text"],
+                input[type="number"],
+                textarea {
+                    color: $text-color;
+                    font-family: inherit;
+                    width: 100%;
+                    padding: 1.6% 3%;
+                    border-radius: 6px;
+                    background: #fff;
+                    outline: none;
+                    border: none;
+                    line-height: 1;
+                    transition: border-color 0.3s ease;
+                    font-size: 9.3px;
+                    letter-spacing: .8px;
+                    text-transform: uppercase;
+                }
+
+                input[type="text"]:focus,
+                input[type="number"]:focus,
+                textarea:focus {
+                    outline: none;
+                }
+
+                textarea#message {
+                    aspect-ratio: 5 / 1;
+                    resize: vertical;
+                    font-family: inherit;
+                    padding: 2% 4%;
+                    border-radius: 5px;
+                }
+
+
+                input[type="text"]::placeholder,
+                textarea::placeholder {
+                    color: $secondary-color;
+                }
+
+                textarea::placeholder {
+                    white-space: pre-line;
+                    /* Cho phép hiển thị xuống dòng trong placeholder */
+                }
+
+                .guest-info-title {
+                    margin-bottom: 2%;
+                    margin-top: 8%;
+                    letter-spacing: .8px;
+                }
+
+                .subtitle {
+                    letter-spacing: .8px;
+                    text-transform: uppercase;
+                    margin-bottom: 3%;
+                }
+
+                .form-select {
+                    width: 100%;
+                    padding: 1.6% 3%;
+                    border-radius: 25px;
+                    background: transparent;
+                    font-size: 12px;
+                    color: $text-color;
+                    outline: none;
+                    border: 2px solid $text-color ;
+                    transition: border-color 0.3s ease;
+                    // appearance: none;
+                    // -webkit-appearance: none;
+                    // -moz-appearance: none;
+                    // background-image: url("../../assets/images/chevron_icon.png");
+                    // background-repeat: no-repeat;
+                    // background-position: right 10px center;
+                    // background-size: 9px;
+                    cursor: pointer;
+                }
+
+                .wish-label {
+                    letter-spacing: .8px;
+                    margin-bottom: 3%;
+                }
+            }
+
+            .form-group.confirm {
+                margin-top: 8%;
+            }
+
+            .form-group.confirm,
+            .form-group.gender {
+                margin-bottom: 8%;
+            }
+
+            .form-group.guest-gender {
+                margin-bottom: 6%;
+            }
+
+            .form-group.guest-info {
+                margin-bottom: 8%;
+            }
+
+            .form-group.note {
+                margin: 4% 0 8%;
+            }
+
+            .form-group.dietary {
+                .subtext {
+                    letter-spacing: .8px;
+                    line-height: 1.6;
+                    margin-bottom: 2%;
+                }
+
+                .grid-checkbox {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 8% 15%;
+
+                    .option {
+                        display: flex;
+                        align-items: center;
+                        gap: 6%;
+
+                        input[type="checkbox"] {
+                            appearance: none;
+                            -webkit-appearance: none;
+                            max-width: 18px;
+                            width: 100%;
+                            aspect-ratio: 1;
+                            border: none;
+                            border-radius: 5px;
+                            background: white;
+                            cursor: pointer;
+                            flex-shrink: 0;
+                            position: relative;
+                            transition: background 0.2s, border-color 0.2s;
+                        }
+
+                        input[type="checkbox"]:checked {
+                            background: #fff;
+                            border-color: $text-color;
+                        }
+
+                        input[type="checkbox"]:checked::after {
+                            content: '';
+                            position: absolute;
+                            left: 20%;
+                            top: 14%;
+                            max-width: 10px;
+                            width: 100%;
+                            aspect-ratio: 10 / 6;
+                            border-left: 2.5px solid $text-color;
+                            border-bottom: 2.5px solid $text-color;
+                            transform: rotate(-45deg);
+                        }
+
+                        input[type="checkbox"]:hover:not(:checked) {
+                            background-color: #1c58b196;
+                        }
+
+                        .label {
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+
+            .submit-btn {
+                font-family: $font-gotham;
+                width: 33%;
+                padding: 2%;
+                line-height: 1;
+                background: $text-color;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                font-weight: 300;
+                font-size: 10px;
+                cursor: pointer;
+                text-transform: uppercase;
+                transition: background 0.3s ease;
+                margin-top: 1%;
+            }
+
+            .submit-btn:hover {
+                background: rgb(68, 86, 95);
+                opacity: 0.9;
+            }
+
+            .submit-btn:active {
+                transform: scale(0.98);
+            }
+
+        }
+    }
+
+    label {
+        display: block;
+        margin-bottom: 2%;
+    }
+
+    .text-size-10 {
+        font-size: 9.11px;
+    }
+
+    .text-size-8 {
+        font-size: 8px;
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            .title {
+                font-size: calc((22 / 500) * 100vw);
+            }
+
+            .subtext {
+                letter-spacing: calc((.8 / 500) * 100vw);
+            }
+
+            .rsvp-form {
+                .button-group {
+                    .radio-wrapper {
+                        height: calc((32 / 500) * 100vw);
+                    }
+
+                    .radio-label {
+                        font-size: calc((9.3 / 500) * 100vw);
+                    }
+                }
+
+                .form-group {
+
+                    input[type="text"],
+                    input[type="number"],
+                    textarea,
+                    .form-select {
+                        font-size: calc((9.3 / 500) * 100vw);
+                    }
+
+                    .guest-info-title {
+                        letter-spacing: calc((.8 / 500) * 100vw);
+                    }
+
+                    .wish-label {
+                        letter-spacing: calc((.8 / 500) * 100vw);
+                    }
+                }
+
+                .form-group.dietary {
+                    .subtext {
+                        letter-spacing: calc((.8 / 500) * 100vw);
+                    }
+
+                    .grid-checkbox {
+                        .option {
+                            input[type="checkbox"] {
+                                max-width: calc((18 / 500) * 100vw);
+                            }
+
+                            input[type="checkbox"]:checked::after {
+                                max-width: calc((10/ 500) * 100vw);
+                            }
+                        }
+                    }
+                }
+
+                .submit-btn {
+                    font-size: calc((10 / 500) * 100vw);
+                }
+            }
+        }
+    }
+}
