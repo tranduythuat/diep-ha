@@ -1127,6 +1127,7 @@ header {
   font-family: "HLT JANEAUST", sans-serif;
   font-size: 19px;
   margin-bottom: 13%;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .letter-section .content .logo img {
