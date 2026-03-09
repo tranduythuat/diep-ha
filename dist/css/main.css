@@ -77,6 +77,8 @@ img {
   background-color: #f1ede5;
   font-family: "SVN-GothamBook", sans-serif;
   font-size: 9.3px;
+  display: none;
+  opacity: 0;
 }
 
 /* music */
@@ -1075,13 +1077,13 @@ header {
 }
 .letter-section .content {
   width: 100%;
-  aspect-ratio: 500/888;
-  background: url("../../assets/images/letter_bg.png");
+  aspect-ratio: 500/891;
+  background: url("../../assets/images/letter.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: start;
+  justify-content: end;
   align-items: center;
   flex-direction: column;
   color: #564e47;
@@ -1124,26 +1126,7 @@ header {
 .letter-section .content .welcome {
   font-family: "HLT JANEAUST", sans-serif;
   font-size: 19px;
-  margin-bottom: 1.5%;
-}
-.letter-section .content .open-card {
-  display: block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "SVN-Gotham", sans-serif;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #4467a0;
-  background-color: #eef8f9;
-  font-size: 12px;
-  border: 1px solid #4467a0;
-  border-radius: 15px;
-  margin: 0 auto;
-  padding: 2%;
-  line-height: 1;
-  width: 35%;
-  margin-top: 5%;
+  margin-bottom: 13%;
 }
 @media (max-width: 500px) {
   .letter-section .content .logo img {
@@ -1156,7 +1139,7 @@ header {
     max-width: 36vw;
   }
   .letter-section .content .welcome, .letter-section .content .subtext {
-    font-size: 2.1vw;
+    font-size: 3.8vw;
   }
   .letter-section .content .open-card {
     font-size: 2.4vw;

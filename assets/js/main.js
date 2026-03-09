@@ -70,7 +70,8 @@
 
     tl.from(".color1", { x: -100, opacity: 0, duration: 0.8 })
       .from(".color2", { x: -100, opacity: 0, duration: 0.8 }, "-=0.4")
-      .from(".color3", { x: -100, opacity: 0, duration: 0.8 }, "-=0.4");
+      .from(".color3", { x: -100, opacity: 0, duration: 0.8 }, "-=0.4")
+      .from(".color4", { x: -100, opacity: 0, duration: 0.8 }, "-=0.4");
   }
 
   function initPage() {
@@ -149,74 +150,74 @@
       }
     );
 
-    tl.from(
-      logo,
-      {
-        rotateY: -180,
-        scale: 0.8,
-        opacity: 0,
-        duration: 1.5,
-        ease: "back.out(1.2)",
-        transformOrigin: "center center"
-      },
-      "-=0.5"
-    );
+    // tl.from(
+    //   logo,
+    //   {
+    //     rotateY: -180,
+    //     scale: 0.8,
+    //     opacity: 0,
+    //     duration: 1.5,
+    //     ease: "back.out(1.2)",
+    //     transformOrigin: "center center"
+    //   },
+    //   "-=0.5"
+    // );
 
-    tl.fromTo(
-      husband,
-      { opacity: 0, x: -30 },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1,
-        ease: "power2.out",
-      },
-      "-=1"
-    );
+    // tl.fromTo(
+    //   husband,
+    //   { opacity: 0, x: -30 },
+    //   {
+    //     opacity: 1,
+    //     x: 0,
+    //     duration: 1,
+    //     ease: "power2.out",
+    //   },
+    //   "-=1"
+    // );
 
-    tl.fromTo(
-      ampersand,
-      { opacity: 0, y: 50, filter: "blur(10px)" },
-      {
-        opacity: 1,
-        y: 0,
-        filter: "blur(0px)",
-        duration: 1,
-        ease: "power2.out",
-        clearProps: "filter"
-      },
-      "-=1"
-    );
+    // tl.fromTo(
+    //   ampersand,
+    //   { opacity: 0, y: 50, filter: "blur(10px)" },
+    //   {
+    //     opacity: 1,
+    //     y: 0,
+    //     filter: "blur(0px)",
+    //     duration: 1,
+    //     ease: "power2.out",
+    //     clearProps: "filter"
+    //   },
+    //   "-=1"
+    // );
 
-    tl.fromTo(
-      wife,
-      { opacity: 0, x: 30 },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1,
-        ease: "power2.out",
-      },
-      "-=1"
-    );
+    // tl.fromTo(
+    //   wife,
+    //   { opacity: 0, x: 30 },
+    //   {
+    //     opacity: 1,
+    //     x: 0,
+    //     duration: 1,
+    //     ease: "power2.out",
+    //   },
+    //   "-=1"
+    // );
 
-    tl.fromTo(
-      divider,
-      {
-        rotation: -120,
-        scale: 0,
-        opacity: 0
-      },
-      {
-        rotation: 0,
-        scale: 1,
-        opacity: 1,
-        duration: 1.2,
-        ease: "back.out(1.6)",
-        transformOrigin: "50% 50%"
-      },
-      "-=0.4"
-    );
+    // tl.fromTo(
+    //   divider,
+    //   {
+    //     rotation: -120,
+    //     scale: 0,
+    //     opacity: 0
+    //   },
+    //   {
+    //     rotation: 0,
+    //     scale: 1,
+    //     opacity: 1,
+    //     duration: 1.2,
+    //     ease: "back.out(1.6)",
+    //     transformOrigin: "50% 50%"
+    //   },
+    //   "-=0.4"
+    // );
 
     tl.fromTo(
       ".welcome",
@@ -233,33 +234,33 @@
     );
 
 
-    tl.fromTo(
-      ".subtext",
-      { opacity: 0, y: 50, filter: "blur(10px)" },
-      {
-        opacity: 1,
-        y: 0,
-        filter: "blur(0px)",
-        duration: 1,
-        ease: "power2.out",
-        clearProps: "filter"
-      },
-      "-=0.8"
-    );
+    // tl.fromTo(
+    //   ".subtext",
+    //   { opacity: 0, y: 50, filter: "blur(10px)" },
+    //   {
+    //     opacity: 1,
+    //     y: 0,
+    //     filter: "blur(0px)",
+    //     duration: 1,
+    //     ease: "power2.out",
+    //     clearProps: "filter"
+    //   },
+    //   "-=0.8"
+    // );
 
-    tl.fromTo(
-      ".open-card",
-      { opacity: 0, y: 50, filter: "blur(10px)" },
-      {
-        opacity: 1,
-        y: 0,
-        filter: "blur(0px)",
-        duration: 1,
-        ease: "power2.out",
-        clearProps: "filter"
-      },
-      "-=0.8"
-    );
+    // tl.fromTo(
+    //   ".open-card",
+    //   { opacity: 0, y: 50, filter: "blur(10px)" },
+    //   {
+    //     opacity: 1,
+    //     y: 0,
+    //     filter: "blur(0px)",
+    //     duration: 1,
+    //     ease: "power2.out",
+    //     clearProps: "filter"
+    //   },
+    //   "-=0.8"
+    // );
     // tl.from(date, { y: 100, opacity: 0 }, "-=0.4");
   }
 
@@ -272,9 +273,6 @@
     if (!section) return;
 
     const content = section.querySelector(".timeline-content");
-    const bg = section.querySelector(".cover-bg");
-    const divider = section.querySelector(".divider-flower");
-    const title = section.querySelector(".timeline-title");
     const items = section.querySelectorAll(".timeline-item");
 
     const tl = gsap.timeline({
@@ -301,34 +299,13 @@
       }
     );
 
-    tl.from(
-      bg,
-      {
-        rotateY: -180,
-        scale: 0.8,
-        opacity: 0,
-        duration: 1.8,
-        ease: "back.out(1.2)",
-        transformOrigin: "center center"
-      },
-      "-=0.5"
-    );
-
-    tl.from([divider, title], {
-      opacity: 0,
-      y: 40,
-      duration: 0.8,
-      stagger: 0.15,
-      ease: "power2.out"
-    }, "-=1.5");
-
     // =========================
     // Animate từng item theo thứ tự
     // =========================
     items.forEach((item, index) => {
       const icon = item.querySelector(".icon-animate");
       const time = item.querySelector(".time");
-      const overlap = index === 0 ? 0 : 0.2 + index * 0.1;
+      // const overlap = index === 0 ? 0 : 0.2 + index * 0.1;
 
       // Item fade
       tl.from(
@@ -529,7 +506,7 @@
       didOpen: () => Swal.showLoading(),
     });
 
-    const sheetURL = "https://script.google.com/macros/s/AKfycbzvbEuZRN41vdFafnZab9GJ1lx-2VPpSJpgY5wb6VsWOZZBFPDeATXAX2eGc6WGSld1zA/exec?sheet=nha-gai";
+    const sheetURL = "/exec?sheet=nha-gai";
 
     try {
       const res = await fetch(sheetURL, {
@@ -644,13 +621,13 @@
 
   function init() {
     gsap.registerPlugin(ScrollTrigger);
-    // initPage();
+    initPage();
     initLetterAnimation();
     // initAnimations();
     // initSwiper();
     initMusic();
-    // initDresscodeAnimation();
-    // initTimeline();
+    initDresscodeAnimation();
+    initTimeline();
     initFAQ();
     initRSVP();
     startCountdown(new Date("2026-04-14T16:00:00"));

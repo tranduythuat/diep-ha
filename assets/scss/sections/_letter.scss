@@ -7,13 +7,13 @@
 
     .content {
         width: 100%;
-        aspect-ratio: 500 / 888;
-        background: url('../../assets/images/letter_bg.png');
+        aspect-ratio: 500 / 891;
+        background: url('../../assets/images/letter.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
-        justify-content: start;
+        justify-content: end;
         align-items: center;
         flex-direction: column;
         color: #564e47ff;
@@ -55,26 +55,26 @@
         .welcome {
             font-family: $font-HLT-JANEAUST;
             font-size: 19px;
-            margin-bottom: 1.5%;
+            margin-bottom: 13%;
         }
 
-        .open-card {
-            display: block;
-            @include flex-center;
-            font-family: $font-gotham;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $text-color;
-            background-color: #eef8f9ff;
-            font-size: 12px;
-            border: 1px solid $text-color;
-            border-radius: 15px;
-            margin: 0 auto;
-            padding: 2%;
-            line-height: 1;
-            width: 35%;
-            margin-top: 5%;
-        }
+        // .open-card {
+        //     display: block;
+        //     @include flex-center;
+        //     font-family: $font-gotham;
+        //     text-decoration: none;
+        //     text-transform: uppercase;
+        //     color: $text-color;
+        //     background-color: #eef8f9ff;
+        //     font-size: 12px;
+        //     border: 1px solid $text-color;
+        //     border-radius: 15px;
+        //     margin: 0 auto;
+        //     padding: 2%;
+        //     line-height: 1;
+        //     width: 35%;
+        //     margin-top: 5%;
+        // }
     }
 
     @media (max-width: 500px) {
@@ -96,7 +96,7 @@
             }
     
             .welcome, .subtext  {
-                font-size: calc((10.5 / 500) * 100vw);
+                font-size: calc((19 / 500) * 100vw);
             }
     
             .open-card {

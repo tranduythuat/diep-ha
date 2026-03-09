@@ -23,8 +23,8 @@
 
 <body>
   <div class="letter-section">
-    <div class="content">
-      <div class="logo">
+    <div class="content" id="open-card">
+      <!-- <div class="logo">
         <img src="assets/images/white_logo.png" class="logo-img" alt="">
       </div>
       <div class="names">
@@ -36,7 +36,7 @@
       </div>
       <div class="divider">
         <img src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/huy-my/22919681892219408023.jpg" class="divider-img" alt="" />
-      </div>
+      </div> -->
       <div class="welcome">
         Dành cho bạn, vị khách <br>
         đặc biệt của chúng tôi
@@ -46,13 +46,13 @@
   <div class="container">
     <section class="hero">
       <div class="content" data-animate="fade-in">
-        <img src="assets/images/ngaychungdoi.png" class="title" data-animate="fade-up" data-animate-delay="0.5" alt="Logo" />
-        <div class="names" data-animate="fade-in" data-animate-delay="1">
-          <div class="wife-name">Diệp</div>
-          <div class="divider">&</div>
-          <div class="husband-name">Hà</div>
+        <img src="assets/images/ngaychungdoi.png" class="title" data-animate="fade-up" alt="Logo" />
+        <div class="names">
+          <div class="wife-name" data-animate="fade-in" data-animate-delay="0.5">Diệp</div>
+          <div class="divider" data-animate="flip-vertical-left" data-animate-delay="0.8">&</div>
+          <div class="husband-name" data-animate="fade-in" data-animate-delay="1">Hà</div>
         </div>
-        <div class="welcome" data-animate="fade-in" data-animate-delay="0.5">
+        <div class="welcome" data-animate="fade-in">
           <p>
             CHÚNG TÔI CHỌN NĂM 2026 <br>
             ĐỂ BẮT ĐẦU MỘT CHƯƠNG MỚI.
@@ -69,23 +69,23 @@
         </div>
 
         <div class="banquet_table">
-          <img src="assets/images/banquet_table.png" alt="">
+          <img src="assets/images/banquet_table.png" data-animate="fade-in" alt="">
         </div>
-        <div class="note">
+        <div class="note" data-animate="fade-in">
           ĐỪNG QUÊN XÁC NHẬN <br>
           THAM GIA CÙNG CHÚNG TÔI NHÉ!
         </div>
-        <div class="downward_arrow">
+        <div class="downward_arrow" data-animate="fade-down">
           <img src="assets/images/downward_arrow.png" alt="">
         </div>
       </div>
     </section>
 
     <section class="countdown">
-      <div class="content">
-        <div class="title fade-in">Cùng đếm ngược nhé...</div>
-        <div class="sub_text fade-in">CHO NGÀY HẠNH PHÚC NHẤT ĐỜI CHÚNG TÔI!</div>
-        <div class="countdown-box fade-in">
+      <div class="content" data-animate="fade-in">
+        <div class="title" data-animate="fade-in">Cùng đếm ngược nhé...</div>
+        <div class="sub_text" data-animate="fade-in">CHO NGÀY HẠNH PHÚC NHẤT ĐỜI CHÚNG TÔI!</div>
+        <div class="countdown-box" data-animate="fade-in">
           <div class="time-box">
             <div class="number" id="days">00</div>
             <div class="label">Days</div>
@@ -103,10 +103,10 @@
             <div class="label">Second</div>
           </div>
         </div>
-        <div class="invite_text">
+        <div class="invite_text" data-animate="fade-in">
           <img src="assets/images/invite_text.png" alt="">
         </div>
-        <div class="cake_img">
+        <div class="cake_img" data-animate="fade-in">
           <img src="assets/images/cake.png" alt="">
         </div>
       </div>
@@ -115,55 +115,55 @@
     <section class="invite">
       <div class="content" data-animate="fade-in">
         <div class="title" data-animate="fade-up">Lịch trình ngày chung đôi</div>
-        <div class="sub_text">
+        <div class="sub_text" data-animate="fade-in">
           THÔNG TIN CHI TIẾT GỬI RIÊNG ĐẾN BẠN
         </div>
         <div class="divider">
-          <img src="assets/images/divider_heart.png" alt="">
+          <img src="assets/images/divider_heart.png" data-animate="flip-vertical-left" alt="">
         </div>
         <div class="location_label" data-animate="fade-in">Địa điểm</div>
         <div class="name" data-animate="fade-in">
           SOFÉ - TRẦN XUÂN SOẠN, TÂN HƯNG, QUẬN 7, HCM
         </div>
-        <div class="map_btn">
+        <div class="map_btn" data-animate="fade-in">
           <a target="_blank" href="https://share.google/ISnuAQx1wMQP6gBC4"><img src="assets/images/mapbtn.png" alt=""></a>
         </div>
         <div class="map_art">
-          <img src="assets/images/map_art.png" data-animate="flip-vertical-left" alt="" />
+          <img src="assets/images/map_art.png" data-animate="fade-in" alt="" />
         </div>
       </div>
     </section>
 
     <section class="dresscode">
       <div class="content" data-animate="fade-in">
-        <div class="logo">
+        <!-- <div class="logo">
           <img src="assets/images/logo.png" data-animate="flip-vertical-left" alt="" />
-        </div>
+        </div> -->
         <h2 data-animate="fade-in">Dresscode</h2>
         <div class="subtext">
           DRESSCODE VOWS: <span class="bold">ÁO DÀI</span><br>
           DRESSCODE: <span class="bold">TRANG PHỤC TỰ DO</span>
         </div>
         <div class="colors-grid">
-          <div class="item color-box color1">
+          <div class="item color-box">
             <div class="color">
-              <div class="circle" style="background-color: #866450ff;"></div>
+              <div class="circle color1" style="background-color: #866450ff;"></div>
             </div>
             <!-- <div class="label">Trắng</div> -->
           </div>
-          <div class="item color-box color1">
+          <div class="item color-box">
             <div class="color">
-              <div class="circle" style="background-color: #efe79dff;"></div>
+              <div class="circle color2" style="background-color: #efe79dff;"></div>
             </div>
           </div>
-          <div class="item color-box color1">
+          <div class="item color-box">
             <div class="color">
-              <div class="circle" style="background-color: #d9cdb6ff;"></div>
+              <div class="circle color3" style="background-color: #d9cdb6ff;"></div>
             </div>
           </div>
-          <div class="item color-box color1">
+          <div class="item color-box">
             <div class="color">
-              <div class="circle" style="background-color: #c0d2abff;"></div>
+              <div class="circle color4" style="background-color: #c0d2abff;"></div>
             </div>
           </div>
         </div>
@@ -213,7 +213,7 @@
           </div>
         </div>
         <div class="box-img">
-          <img src="assets/images/wine.png" alt="">
+          <img src="assets/images/wine.png" data-animate="fade-in" alt="">
         </div>
       </div>
     </section>
@@ -223,7 +223,7 @@
     <section class="rsvp">
       <div class="content" data-animate="fade-in">
         <h2 class="title" data-animate="fade-in">Xác nhận tham dự</h2>
-        <div class="subtext">MONG ĐƯỢC ĐÓN BẠN TRONG NGÀY VUI CỦA CHÚNG TÔI</div>
+        <div class="subtext" data-animate="fade-in">MONG ĐƯỢC ĐÓN BẠN TRONG NGÀY VUI CỦA CHÚNG TÔI</div>
         <form id="rsvpForm" class="rsvp-form">
           <div class="header">
             <p class="subtext" data-animate="fade-in">
@@ -311,8 +311,8 @@
               </select>
             </div> -->
 
-          <div class="form-group guest-info">
-            <p class="guest-info-title fade-in">
+          <div class="form-group guest-info" data-animate="fade-in">
+            <p class="guest-info-title">
               SỐ LƯỢNG KHÁCH MỜI THAM DỰ (BAO GỒM CẢ BẠN NHÉ)
             </p>
             <div class="form-group fade-in">
@@ -325,7 +325,7 @@
             </div>
           </div>
 
-          <div class="form-group dietary">
+          <div class="form-group dietary" data-animate="fade-in">
             <p class="subtext">
               ĐỂ TRAI NGHIỆM THÊM PHẦN TRỌN VẸN, HÃY CHIA SẺ VỚI CHÚNG <br>
               TÔI NẾU BẠN CÓ BẤT KỲ LƯU Ý ĐẶC BIỆT NÀO VỀ ĂN UỐNG NHÉ!
