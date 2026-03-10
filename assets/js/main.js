@@ -94,6 +94,7 @@
       x:-100,
       y: 20,
       opacity:0.4,
+      scaleX:1.3,
       filter: "blur(40px)",
       duration:2
     },"<")
@@ -101,6 +102,7 @@
       x:-100,
       y: 20,
       opacity:0.4,
+      scaleX:1.3,
       filter: "blur(40px)",
       duration:2
     },"<")
