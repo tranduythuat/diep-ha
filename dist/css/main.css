@@ -18,6 +18,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "Lora";
+  src: url("../../assets/fonts/Lora-Regular.woff2") format("woff2"), url("../../assets/fonts/Lora-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "HLT JANEAUST";
   src: url("../../assets/fonts/HLT JANEAUST.TTF") format("truetype");
   font-weight: normal;
@@ -75,8 +81,10 @@ img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.281);
   color: #4467a0;
   background-color: #f1ede5;
-  font-family: "SVN-GothamBook", sans-serif;
+  font-family: "Lora", sans-serif;
   font-size: 9.3px;
+  display: none;
+  opacity: 0;
 }
 
 /* music */
@@ -371,10 +379,12 @@ header {
 }
 .invite .content .location_label {
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 .invite .content .name {
   margin: 3% 0;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 .invite .content .map_btn img {
   max-width: 162px;
@@ -395,6 +405,9 @@ header {
   }
   .invite .content .divider img {
     max-width: 8.4vw;
+  }
+  .invite .content .location_label, .invite .content .name {
+    letter-spacing: 0.3vw;
   }
   .invite .content .map_btn img {
     max-width: 32.4vw;
@@ -994,7 +1007,7 @@ header {
   font-weight: 100;
   line-height: 1;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  font-family: "SVN-gothamBold", sans-serif;
+  font-family: "Lora", sans-serif;
 }
 .countdown .content .countdown-box .time-box .label {
   font-size: 8.5px;
@@ -1075,75 +1088,56 @@ header {
 }
 .letter-section .content {
   width: 100%;
-  aspect-ratio: 500/888;
-  background: url("../../assets/images/letter_bg.png");
+  aspect-ratio: 500/891;
+  background: url("../../assets/images/nen.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: start;
+  justify-content: end;
   align-items: center;
   flex-direction: column;
   color: #564e47;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.439);
   position: relative;
   cursor: pointer;
-  perspective: 1000px;
-  padding-top: 15%;
-}
-.letter-section .content .logo {
-  margin-bottom: 10%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.letter-section .content .logo img {
-  max-width: 65px;
-  width: 100%;
-  height: auto;
-}
-.letter-section .content .names {
-  margin-bottom: 4%;
-  font-size: 54px;
-  text-align: center;
-  line-height: 1.2;
-}
-.letter-section .content .divider {
-  margin: 5% 0 5%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.letter-section .content .divider img {
-  max-width: 180px;
-  width: 100%;
-  height: auto;
+  perspective: 1400px;
+  overflow: hidden;
 }
 .letter-section .content .welcome {
   font-family: "HLT JANEAUST", sans-serif;
   font-size: 19px;
-  margin-bottom: 1.5%;
+  margin-bottom: 13%;
+  text-align: center;
 }
-.letter-section .content .open-card {
-  display: block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "SVN-Gotham", sans-serif;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #4467a0;
-  background-color: #eef8f9;
-  font-size: 12px;
-  border: 1px solid #4467a0;
-  border-radius: 15px;
-  margin: 0 auto;
-  padding: 2%;
-  line-height: 1;
+.letter-section .content .flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.letter-section .content .flap-shadow {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 100%;
+  aspect-ratio: 1;
+  background: rgba(0, 0, 0, 0.635);
+  filter: blur(15px);
+  opacity: 0.8;
+}
+.letter-section .content .seal-shadow {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
   width: 35%;
-  margin-top: 5%;
+  aspect-ratio: 1;
+  background: rgba(0, 0, 0, 0.635);
+  filter: blur(15px);
+  opacity: 0.8;
+  border-radius: 50%;
 }
 @media (max-width: 500px) {
   .letter-section .content .logo img {
@@ -1155,8 +1149,9 @@ header {
   .letter-section .content .divider img {
     max-width: 36vw;
   }
-  .letter-section .content .welcome, .letter-section .content .subtext {
-    font-size: 2.1vw;
+  .letter-section .content .welcome,
+  .letter-section .content .subtext {
+    font-size: 3.8vw;
   }
   .letter-section .content .open-card {
     font-size: 2.4vw;

@@ -268,21 +268,26 @@ function gsapFadeDown(selector) {
 }
 
 
-function gsapFlipVerticalLeft(selector) {
-  gsap.utils.toArray(selector).forEach((el) => {
-    gsap.from(el, {
-      rotateY: -180,
-      scale: 0.8,
-      opacity: 0,
-      duration: 2,
-      ease: "back.out(1.2)",
-      transformOrigin: "center center",
-      scrollTrigger: {
-        trigger: el,
-        start: "top 85%",
-        toggleActions: "play none none reverse",
-      },
-    });
+function gsapFlipVerticalLeft(el, options = {}) {
+   const {
+    delay = 0,
+    duration = 1,
+    scrollStart = "top 85%"
+  } = options;
+  gsap.from(el, {
+    rotateY: -180,
+    scale: 0.8,
+    opacity: 0,
+    duration: 2,
+    delay,
+    duration,
+    ease: "back.out(1.2)",
+    transformOrigin: "center center",
+    scrollTrigger: {
+      trigger: el,
+      start: scrollStart,
+      toggleActions: "play none none reverse",
+    },
   });
 }
 

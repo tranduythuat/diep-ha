@@ -24,11 +24,13 @@
         }
         .location_label{
             text-transform: uppercase;
+            letter-spacing: 1.5px;
         }
 
         .name {
             margin: 3% 0;
             text-transform: uppercase;
+            letter-spacing: 1.5px;
         }
 
         .map_btn {
@@ -61,7 +63,10 @@
                     max-width: calc((42 / 500) * 100vw);
                 }
             }
-
+            .location_label,  .name {
+                letter-spacing: calc((1.5 / 500) * 100vw);
+            }
+    
             .map_btn {
                 img {
                     max-width: calc((162 / 500) * 100vw);
