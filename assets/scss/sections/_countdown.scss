@@ -44,8 +44,7 @@
                 }
         
                 .label {
-                    font-size: 8.5px;
-                    text-transform: uppercase;
+                    font-size: 10.5px;
                     letter-spacing: 1px;
                     font-weight: 500;
                 }
@@ -80,7 +79,7 @@
                         font-size: calc((32 / 500) * 100vw);
                     }
                     .label {
-                        font-size: calc((8.5 / 500) * 100vw);
+                        font-size: calc((10.5 / 500) * 100vw);
                         letter-spacing: calc((1 / 500) * 100vw);
                     }
                 }

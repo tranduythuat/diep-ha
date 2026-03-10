@@ -84,8 +84,8 @@
         transformOrigin: "top center"
       },
       {
-        // y: -20,
-        rotateX: 25,
+        y: -30,
+        rotateX: 20,
         duration: 1.5,
         ease: "power2.inOut",
       }
@@ -96,7 +96,7 @@
       opacity:0.4,
       scaleX:1.3,
       filter: "blur(40px)",
-      duration:2
+      duration:1.5
     },"<")
     .to(".seal-shadow",{
       x:-100,
@@ -104,7 +104,7 @@
       opacity:0.4,
       scaleX:1.3,
       filter: "blur(40px)",
-      duration:2
+      duration:1.5
     },"<")
     .to(".letter-section", {
       opacity: 0,

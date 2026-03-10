@@ -82,7 +82,7 @@ img {
   color: #4467a0;
   background-color: #f1ede5;
   font-family: "Lora", sans-serif;
-  font-size: 9.3px;
+  font-size: 12.3px;
   display: none;
   opacity: 0;
 }
@@ -133,7 +133,7 @@ img {
 
 @media (max-width: 500px) {
   .container {
-    font-size: 1.86vw;
+    font-size: 2.46vw;
   }
   .music-box {
     bottom: 2vw;
@@ -310,7 +310,6 @@ header {
   transform: rotate(-20deg);
 }
 .hero .content .welcome {
-  text-transform: uppercase;
   line-height: 1.8;
 }
 .hero .content .welcome p {
@@ -378,12 +377,10 @@ header {
   max-width: 42px;
 }
 .invite .content .location_label {
-  text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 .invite .content .name {
   margin: 3% 0;
-  text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 .invite .content .map_btn img {
@@ -458,7 +455,6 @@ header {
 }
 .timeline .content .items .item .time {
   letter-spacing: 1.5px;
-  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -506,7 +502,6 @@ header {
   margin-bottom: 5%;
 }
 .dresscode .content .subtext {
-  text-transform: uppercase;
   letter-spacing: 1.2px;
   line-height: 1.8;
 }
@@ -743,8 +738,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 9.3px;
-  text-transform: uppercase;
+  font-size: 12.3px;
   font-family: inherit;
   height: 100%;
   line-height: 1;
@@ -779,9 +773,8 @@ header {
   border: none;
   line-height: 1;
   transition: border-color 0.3s ease;
-  font-size: 9.3px;
+  font-size: 12.3px;
   letter-spacing: 0.8px;
-  text-transform: uppercase;
 }
 .rsvp .content .rsvp-form .form-group input[type=text]:focus,
 .rsvp .content .rsvp-form .form-group input[type=number]:focus,
@@ -810,7 +803,6 @@ header {
 }
 .rsvp .content .rsvp-form .form-group .subtitle {
   letter-spacing: 0.8px;
-  text-transform: uppercase;
   margin-bottom: 3%;
 }
 .rsvp .content .rsvp-form .form-group .form-select {
@@ -893,9 +885,6 @@ header {
 .rsvp .content .rsvp-form .form-group.dietary .grid-checkbox .option input[type=checkbox]:hover:not(:checked) {
   background-color: rgba(28, 88, 177, 0.5882352941);
 }
-.rsvp .content .rsvp-form .form-group.dietary .grid-checkbox .option .label {
-  text-transform: uppercase;
-}
 .rsvp .content .rsvp-form .submit-btn {
   font-family: "SVN-Gotham", sans-serif;
   width: 33%;
@@ -908,7 +897,6 @@ header {
   font-weight: 300;
   font-size: 10px;
   cursor: pointer;
-  text-transform: uppercase;
   transition: background 0.3s ease;
   margin-top: 1%;
 }
@@ -940,13 +928,13 @@ header {
     height: 6.4vw;
   }
   .rsvp .content .rsvp-form .button-group .radio-label {
-    font-size: 1.86vw;
+    font-size: 2.46vw;
   }
   .rsvp .content .rsvp-form .form-group input[type=text],
   .rsvp .content .rsvp-form .form-group input[type=number],
   .rsvp .content .rsvp-form .form-group textarea,
   .rsvp .content .rsvp-form .form-group .form-select {
-    font-size: 1.86vw;
+    font-size: 2.46vw;
   }
   .rsvp .content .rsvp-form .form-group .guest-info-title {
     letter-spacing: 0.16vw;
@@ -1010,8 +998,7 @@ header {
   font-family: "Lora", sans-serif;
 }
 .countdown .content .countdown-box .time-box .label {
-  font-size: 8.5px;
-  text-transform: uppercase;
+  font-size: 10.5px;
   letter-spacing: 1px;
   font-weight: 500;
 }
@@ -1035,7 +1022,7 @@ header {
     font-size: 6.4vw;
   }
   .countdown .content .countdown-box .time-box .label {
-    font-size: 1.7vw;
+    font-size: 2.1vw;
     letter-spacing: 0.2vw;
   }
   .countdown .content .invite_text {
@@ -1106,7 +1093,7 @@ header {
 .letter-section .content .welcome {
   font-family: "HLT JANEAUST", sans-serif;
   font-size: 19px;
-  margin-bottom: 13%;
+  margin-bottom: 16%;
   text-align: center;
 }
 .letter-section .content .flap {
