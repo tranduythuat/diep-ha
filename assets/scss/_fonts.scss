@@ -23,6 +23,14 @@
 }
 
 @font-face {
+    font-family: 'Lora';
+    src: url('../../assets/fonts/Lora-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/Lora-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'HLT JANEAUST';
     src: url('../../assets/fonts/HLT JANEAUST.TTF') format('truetype');
     font-weight: normal;
