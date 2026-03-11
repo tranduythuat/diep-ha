@@ -471,7 +471,7 @@ header {
   align-items: center;
 }
 .timeline .content .items .item .time .strong {
-  font-family: "SVN-gothamBold", sans-serif;
+  font-weight: 600;
 }
 .timeline .content .items .item:nth-of-type(2) .icon img {
   max-width: 38px;
@@ -526,7 +526,7 @@ header {
   line-height: 1.8;
 }
 .dresscode .content .subtext .bold {
-  font-family: "SVN-gothamBold", sans-serif;
+  font-weight: 600;
 }
 .dresscode .content .colors-grid {
   display: flex;

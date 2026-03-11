@@ -41,7 +41,7 @@
                     // text-transform: uppercase;
                     @include flex-center;
                     .strong {
-                        font-family: $font-gothamBold;
+                        font-weight: 600;
                     }
                 }
 
