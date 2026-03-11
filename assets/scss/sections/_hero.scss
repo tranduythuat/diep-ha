@@ -18,7 +18,7 @@
 
         .names {
             font-size: 115px;
-            font-family: $font-HLT-JANEAUST;
+            font-family: $font-MTD-Hangbird;
             line-height: 1.2;
             position: relative;
             padding: 8% 0;
@@ -33,7 +33,7 @@
                 position: absolute;
                 left: 24%;
                 bottom: 36%;
-                font-family: $font-SVN-Olivier;
+                font-family: $font-MTD-Hangbird;
                 font-size: 72px;
                 transform: rotate(-20deg);
             }
@@ -49,11 +49,12 @@
         .banquet_table {
             margin: 14% 0 8%;
             img {
-                max-width: 310px;
+                max-width: 364px;
             }
         }
         .note {
             line-height: 1.8;
+            letter-spacing: 1px;
         }
         .downward_arrow {
             margin-top: 2%;
@@ -88,12 +89,12 @@
             }
             .banquet_table {
                 img {
-                    max-width: calc((310 / 500) * 100vw);
+                    max-width: calc((364 / 500) * 100vw);
                 }
             }
-            // .note {
-            //     font-size: calc((10 / 500) * 100vw);
-            // }
+            .note {
+                letter-spacing: calc((1 / 500) * 100vw);
+            }
             
             .downward_arrow {
                 img {

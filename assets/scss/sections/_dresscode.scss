@@ -10,7 +10,7 @@
        
         h2 {
             font-size: 32px;
-            font-family: $font-HLT-JANEAUST;
+            font-family: $font-MTD-Hangbird;
             font-weight: 300;
             margin-bottom: 5%;
         }
@@ -27,7 +27,7 @@
             display: flex;
             justify-content: center;
             margin: 0 auto;
-            width: 40%;
+            width: 50%;
             margin-top: 2%;
             .item {
                 flex: 1;
@@ -39,7 +39,7 @@
                     width: 100%;
                     @include flex-center;
                     .circle {
-                        max-width: 28px;
+                        max-width: 38px;
                         width: 100%;
                         aspect-ratio: 1;
                         border-radius: 50%;
@@ -70,8 +70,8 @@
             .colors-grid {
                 .item {
                     .color {
-                        img {
-                            max-width: calc((45 /   500) * 100vw);
+                        .circle {
+                            max-width: calc((38 /   500) * 100vw);
                         }
                     }
     

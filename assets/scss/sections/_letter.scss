@@ -49,8 +49,8 @@
         // }
 
         .welcome {
-            font-family: $font-HLT-JANEAUST;
-            font-size: 19px;
+            font-family: $font-MTD-Hangbird;
+            font-size: 22px;
             margin-bottom: 16%;
             text-align: center;
         }
@@ -127,7 +127,7 @@
 
             .welcome,
             .subtext {
-                font-size: calc((19 / 500) * 100vw);
+                font-size: calc((22 / 500) * 100vw);
             }
 
             .open-card {

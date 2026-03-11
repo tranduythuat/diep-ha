@@ -41,6 +41,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "MTD-Hangbird";
+  src: url("../../assets/fonts/MTD-Hangbird.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -79,10 +85,10 @@ img {
   position: relative;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.281);
-  color: #4467a0;
+  color: rgb(32, 68, 125);
   background-color: #f1ede5;
   font-family: "Lora", sans-serif;
-  font-size: 12.3px;
+  font-size: 13.3px;
   display: none;
   opacity: 0;
 }
@@ -133,7 +139,7 @@ img {
 
 @media (max-width: 500px) {
   .container {
-    font-size: 2.46vw;
+    font-size: 2.66vw;
   }
   .music-box {
     bottom: 2vw;
@@ -289,7 +295,7 @@ header {
 }
 .hero .content .names {
   font-size: 115px;
-  font-family: "HLT JANEAUST", sans-serif;
+  font-family: "MTD-Hangbird", sans-serif;
   line-height: 1.2;
   position: relative;
   padding: 8% 0;
@@ -305,7 +311,7 @@ header {
   position: absolute;
   left: 24%;
   bottom: 36%;
-  font-family: "SVN-Olivier", sans-serif;
+  font-family: "MTD-Hangbird", sans-serif;
   font-size: 72px;
   transform: rotate(-20deg);
 }
@@ -320,10 +326,11 @@ header {
   margin: 14% 0 8%;
 }
 .hero .content .banquet_table img {
-  max-width: 310px;
+  max-width: 364px;
 }
 .hero .content .note {
   line-height: 1.8;
+  letter-spacing: 1px;
 }
 .hero .content .downward_arrow {
   margin-top: 2%;
@@ -348,7 +355,10 @@ header {
     font-size: 14.4vw;
   }
   .hero .content .banquet_table img {
-    max-width: 62vw;
+    max-width: 72.8vw;
+  }
+  .hero .content .note {
+    letter-spacing: 0.2vw;
   }
   .hero .content .downward_arrow img {
     max-width: 4vw;
@@ -364,11 +374,12 @@ header {
 }
 .invite .content .title {
   font-size: 22px;
-  font-family: "HLT JANEAUST", sans-serif;
+  font-family: "MTD-Hangbird", sans-serif;
   line-height: 1.5;
 }
 .invite .content .sub_text {
   letter-spacing: 1.2px;
+  margin-top: 1%;
 }
 .invite .content .divider {
   margin: 8% 0 3%;
@@ -384,7 +395,7 @@ header {
   letter-spacing: 1.5px;
 }
 .invite .content .map_btn img {
-  max-width: 162px;
+  max-width: 172px;
 }
 .invite .content .map_art {
   perspective: 1000px;
@@ -407,7 +418,7 @@ header {
     letter-spacing: 0.3vw;
   }
   .invite .content .map_btn img {
-    max-width: 32.4vw;
+    max-width: 34.4vw;
   }
   .invite .content .map_art img {
     max-width: 74.4vw;
@@ -426,8 +437,8 @@ header {
   padding-top: 15%;
 }
 .timeline .content .title {
-  font-family: "HLT JANEAUST", sans-serif;
-  font-size: 21px;
+  font-family: "MTD-Hangbird", sans-serif;
+  font-size: 32px;
   letter-spacing: 0.8px;
   font-weight: 300;
   margin-bottom: 3%;
@@ -449,7 +460,7 @@ header {
   margin-bottom: 2%;
 }
 .timeline .content .items .item .icon img {
-  max-width: 20px;
+  max-width: 28px;
   width: 100%;
   height: auto;
 }
@@ -459,31 +470,40 @@ header {
   justify-content: center;
   align-items: center;
 }
+.timeline .content .items .item .time .strong {
+  font-family: "SVN-gothamBold", sans-serif;
+}
 .timeline .content .items .item:nth-of-type(2) .icon img {
-  max-width: 27px;
+  max-width: 38px;
+}
+.timeline .content .items .item:nth-of-type(6) .icon img {
+  max-width: 34px;
 }
 .timeline .content .box-img img {
-  max-width: 220px;
+  max-width: 440px;
 }
 @media (max-width: 500px) {
   .timeline .content .title {
-    font-size: 7.2vw;
+    font-size: 6.4vw;
     letter-spacing: 0.16vw;
   }
   .timeline .content .subtext {
     letter-spacing: 0.16vw;
   }
   .timeline .content .items .item .icon img {
-    max-width: 4vw;
+    max-width: 5.6vw;
   }
   .timeline .content .items .item .time {
     letter-spacing: 0.3vw;
   }
   .timeline .content .items .item:nth-of-type(2) .icon img {
-    max-width: 5.4vw;
+    max-width: 7.6vw;
+  }
+  .timeline .content .items .item:nth-of-type(6) .icon img {
+    max-width: 6.8vw;
   }
   .timeline .content .box-img img {
-    max-width: 44vw;
+    max-width: 88vw;
   }
 }
 
@@ -497,7 +517,7 @@ header {
 }
 .dresscode .content h2 {
   font-size: 32px;
-  font-family: "HLT JANEAUST", sans-serif;
+  font-family: "MTD-Hangbird", sans-serif;
   font-weight: 300;
   margin-bottom: 5%;
 }
@@ -512,7 +532,7 @@ header {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: 40%;
+  width: 50%;
   margin-top: 2%;
 }
 .dresscode .content .colors-grid .item {
@@ -529,7 +549,7 @@ header {
   align-items: center;
 }
 .dresscode .content .colors-grid .item .color .circle {
-  max-width: 28px;
+  max-width: 38px;
   width: 100%;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -547,8 +567,8 @@ header {
   .dresscode .content .subtext {
     font-size: 2.8vw;
   }
-  .dresscode .content .colors-grid .item .color img {
-    max-width: 9vw;
+  .dresscode .content .colors-grid .item .color .circle {
+    max-width: 7.6vw;
   }
   .dresscode .content .colors-grid .item .label {
     font-size: 2.4vw;
@@ -560,7 +580,7 @@ header {
 }
 .faqs .content {
   width: 100%;
-  color: #4467a0;
+  color: rgb(32, 68, 125);
   display: flex;
   justify-content: start;
   align-items: center;
@@ -577,7 +597,7 @@ header {
   margin-top: 8%;
 }
 .faqs .content .faq-container .faq-item {
-  border: 2px solid #4467a0;
+  border: 2px solid rgb(32, 68, 125);
   border-radius: 8px;
   margin-bottom: 2%;
   overflow: hidden;
@@ -586,7 +606,7 @@ header {
   width: 100%;
   background: transparent;
   font-family: inherit;
-  color: #4467a0;
+  color: rgb(32, 68, 125);
   padding: 3% 4% 2%;
   display: flex;
   justify-content: space-between;
@@ -601,7 +621,7 @@ header {
   line-height: 1;
 }
 .faqs .content .faq-container .faq-item .faq-content {
-  color: #4467a0;
+  color: rgb(32, 68, 125);
   height: 0;
   overflow: hidden;
 }
@@ -613,7 +633,7 @@ header {
 .faqs .content .faq-container .faq-item .faq-content a {
   display: block;
   font-size: 14px;
-  color: #4467a0;
+  color: rgb(32, 68, 125);
   margin-bottom: 2%;
 }
 @media (max-width: 500px) {
@@ -646,7 +666,7 @@ header {
 .album .content h2 {
   font-size: 54px;
   font-weight: 300;
-  color: #4467a0;
+  color: rgb(32, 68, 125);
   margin: 5% 0 7%;
 }
 .album .content .swiper {
@@ -699,9 +719,9 @@ header {
   padding: 20% 0;
 }
 .rsvp .content .title {
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 300;
-  font-family: "HLT JANEAUST", sans-serif;
+  font-family: "MTD-Hangbird", sans-serif;
   margin-bottom: 2%;
 }
 .rsvp .content .subtext {
@@ -738,7 +758,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 12.3px;
+  font-size: 13.3px;
   font-family: inherit;
   height: 100%;
   line-height: 1;
@@ -750,11 +770,11 @@ header {
   border: none;
 }
 .rsvp .content .rsvp-form .button-group .radio-label:hover {
-  background: #4467a0;
+  background: rgb(32, 68, 125);
   color: white;
 }
 .rsvp .content .rsvp-form .button-group .radio-wrapper input[type=radio]:checked + .radio-label {
-  background: #4467a0;
+  background: rgb(32, 68, 125);
   color: white;
 }
 .rsvp .content .rsvp-form .form-group {
@@ -763,7 +783,7 @@ header {
 .rsvp .content .rsvp-form .form-group input[type=text],
 .rsvp .content .rsvp-form .form-group input[type=number],
 .rsvp .content .rsvp-form .form-group textarea {
-  color: #4467a0;
+  color: rgb(32, 68, 125);
   font-family: inherit;
   width: 100%;
   padding: 1.6% 3%;
@@ -773,7 +793,7 @@ header {
   border: none;
   line-height: 1;
   transition: border-color 0.3s ease;
-  font-size: 12.3px;
+  font-size: 13.3px;
   letter-spacing: 0.8px;
 }
 .rsvp .content .rsvp-form .form-group input[type=text]:focus,
@@ -811,9 +831,9 @@ header {
   border-radius: 25px;
   background: transparent;
   font-size: 12px;
-  color: #4467a0;
+  color: rgb(32, 68, 125);
   outline: none;
-  border: 2px solid #4467a0;
+  border: 2px solid rgb(32, 68, 125);
   transition: border-color 0.3s ease;
   cursor: pointer;
 }
@@ -868,7 +888,7 @@ header {
 }
 .rsvp .content .rsvp-form .form-group.dietary .grid-checkbox .option input[type=checkbox]:checked {
   background: #fff;
-  border-color: #4467a0;
+  border-color: rgb(32, 68, 125);
 }
 .rsvp .content .rsvp-form .form-group.dietary .grid-checkbox .option input[type=checkbox]:checked::after {
   content: "";
@@ -878,8 +898,8 @@ header {
   max-width: 10px;
   width: 100%;
   aspect-ratio: 10/6;
-  border-left: 2.5px solid #4467a0;
-  border-bottom: 2.5px solid #4467a0;
+  border-left: 2.5px solid rgb(32, 68, 125);
+  border-bottom: 2.5px solid rgb(32, 68, 125);
   transform: rotate(-45deg);
 }
 .rsvp .content .rsvp-form .form-group.dietary .grid-checkbox .option input[type=checkbox]:hover:not(:checked) {
@@ -890,12 +910,12 @@ header {
   width: 33%;
   padding: 2%;
   line-height: 1;
-  background: #4467a0;
+  background: rgb(32, 68, 125);
   color: white;
   border: none;
   border-radius: 8px;
   font-weight: 300;
-  font-size: 10px;
+  font-size: 13.3px;
   cursor: pointer;
   transition: background 0.3s ease;
   margin-top: 1%;
@@ -919,7 +939,7 @@ header {
 }
 @media (max-width: 500px) {
   .rsvp .content .title {
-    font-size: 4.4vw;
+    font-size: 6.4vw;
   }
   .rsvp .content .subtext {
     letter-spacing: 0.16vw;
@@ -928,13 +948,13 @@ header {
     height: 6.4vw;
   }
   .rsvp .content .rsvp-form .button-group .radio-label {
-    font-size: 2.46vw;
+    font-size: 2.66vw;
   }
   .rsvp .content .rsvp-form .form-group input[type=text],
   .rsvp .content .rsvp-form .form-group input[type=number],
   .rsvp .content .rsvp-form .form-group textarea,
   .rsvp .content .rsvp-form .form-group .form-select {
-    font-size: 2.46vw;
+    font-size: 2.66vw;
   }
   .rsvp .content .rsvp-form .form-group .guest-info-title {
     letter-spacing: 0.16vw;
@@ -952,7 +972,7 @@ header {
     max-width: 2vw;
   }
   .rsvp .content .rsvp-form .submit-btn {
-    font-size: 2vw;
+    font-size: 2.66vw;
   }
 }
 
@@ -965,8 +985,8 @@ header {
   padding: 20% 0 15%;
 }
 .countdown .content .title {
-  font-size: 22px;
-  font-family: "HLT JANEAUST", sans-serif;
+  font-size: 32px;
+  font-family: "MTD-Hangbird", sans-serif;
   margin-bottom: 2%;
 }
 .countdown .content .sub_text {
@@ -1013,7 +1033,7 @@ header {
 }
 @media (max-width: 500px) {
   .countdown .content .title {
-    font-size: 4.4vw;
+    font-size: 6.4vw;
   }
   .countdown .content .sub_text {
     letter-spacing: 0.28vw;
@@ -1091,8 +1111,8 @@ header {
   overflow: hidden;
 }
 .letter-section .content .welcome {
-  font-family: "HLT JANEAUST", sans-serif;
-  font-size: 19px;
+  font-family: "MTD-Hangbird", sans-serif;
+  font-size: 22px;
   margin-bottom: 16%;
   text-align: center;
 }
@@ -1138,7 +1158,7 @@ header {
   }
   .letter-section .content .welcome,
   .letter-section .content .subtext {
-    font-size: 3.8vw;
+    font-size: 4.4vw;
   }
   .letter-section .content .open-card {
     font-size: 2.4vw;

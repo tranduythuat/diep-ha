@@ -8,12 +8,13 @@
         padding-top: 10%;
         .title {
             font-size: 22px;
-            font-family: $font-HLT-JANEAUST;
+            font-family: $font-MTD-Hangbird;
             line-height: 1.5;
         }
 
         .sub_text {
             letter-spacing: 1.2px;
+            margin-top: 1%;
         }
 
         .divider {
@@ -35,7 +36,7 @@
 
         .map_btn {
             img {
-                max-width: 162px;
+                max-width: 172px;
             }
         }
 
@@ -69,7 +70,7 @@
     
             .map_btn {
                 img {
-                    max-width: calc((162 / 500) * 100vw);
+                    max-width: calc((172 / 500) * 100vw);
                 }
             }
     
