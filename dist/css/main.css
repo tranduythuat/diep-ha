@@ -300,29 +300,30 @@ header {
   font-size: 42px;
   letter-spacing: 4px;
   line-height: 1;
-  transform: translateZ(0);
+  stransform: translateZ(0);
 }
 .hero .content .names {
   font-size: 115px;
   font-family: "MTD-Hangbird", sans-serif;
   line-height: 1.2;
   position: relative;
-  padding: 8% 0;
-}
-.hero .content .names .wife-name {
-  text-align: left;
+  max-width: 250px;
+  width: 100%;
+  text-align: center;
+  margin: 10% 0;
 }
 .hero .content .names .husband-name {
-  text-align: right;
-  padding-right: 5%;
+  margin-left: 10%;
 }
 .hero .content .names .divider {
   position: absolute;
-  left: 24%;
-  bottom: 36%;
+  left: 20%;
+  bottom: 31%;
   font-family: "MTD-Hangbird", sans-serif;
   font-size: 72px;
   transform: rotate(-20deg);
+  max-width: 70px;
+  width: 100%;
 }
 .hero .content .welcome {
   line-height: 1.8;
@@ -364,8 +365,10 @@ header {
   }
   .hero .content .names {
     font-size: 23vw;
+    max-width: 46.6vw;
   }
   .hero .content .names .divider {
+    max-width: 14vw;
     font-size: 14.4vw;
   }
   .hero .content .banquet_table img {

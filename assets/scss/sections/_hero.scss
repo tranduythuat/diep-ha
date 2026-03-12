@@ -16,7 +16,7 @@
             font-size: 42px;
             letter-spacing: 4px;
             line-height: 1;
-                transform: translateZ(0);
+            stransform: translateZ(0);
         }
 
         .names {
@@ -24,21 +24,25 @@
             font-family: $font-MTD-Hangbird;
             line-height: 1.2;
             position: relative;
-            padding: 8% 0;
+            max-width: 250px;
+            width: 100%;
+            text-align: center;
+            margin: 10% 0;
+
             .wife-name {
-                text-align: left;
             }
             .husband-name {
-                text-align: right;
-                padding-right: 5%;
+                margin-left: 10%;
             }
             .divider {
                 position: absolute;
-                left: 24%;
-                bottom: 36%;
+                left: 20%;
+                bottom: 31%;
                 font-family: $font-MTD-Hangbird;
                 font-size: 72px;
                 transform: rotate(-20deg);
+                max-width: 70px;
+                width: 100%;
             }
         }
         
@@ -89,7 +93,9 @@
             }
             .names {
                 font-size: calc((115 / 500) * 100vw);
+                max-width: calc((233 / 500) * 100vw);
                 .divider {
+                    max-width: calc((70 / 500) * 100vw);
                     font-size: calc((72 / 500) * 100vw);
                 }
             }
