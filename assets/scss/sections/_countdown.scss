@@ -10,8 +10,10 @@
         
         .title {
             font-size: 32px;
-            font-family: $font-MTD-Hangbird;
-            margin-bottom: 2%;
+            letter-spacing: 3px;
+            font-family: $font-ICIEL-RUKOLA;
+            line-height: 1;
+            margin-bottom: 1%;
         }
 
         .sub_text {
@@ -52,9 +54,13 @@
         }
         .invite_text {
             margin: 25% 0 8%;
-            img {
-                max-width: 286px;
-            }
+            font-family: $font-ICIEL-RUKOLA;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: 2px;
+            // img {
+            //     max-width: 286px;
+            // }
         }
         .cake_img {
             img {
@@ -67,6 +73,7 @@
         .content {
             .title {
                 font-size: calc((32 / 500) * 100vw);
+                letter-spacing: calc((3 / 500) * 100vw);
             }
 
             .sub_text {
@@ -87,10 +94,8 @@
             }
 
             .invite_text {
-                margin: 25% 0 8%;
-                img {
-                    max-width: calc((286 / 500) * 100vw);
-                }
+                font-size: calc((24 / 500) * 100vw);
+                letter-spacing: calc((2 / 500) * 100vw);
             }
             .cake_img {
                 img {

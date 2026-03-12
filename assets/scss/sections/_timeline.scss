@@ -11,11 +11,12 @@
         align-items: center;
         padding-top: 15%;
         .title {
-            font-family: $font-MTD-Hangbird;
+            font-family: $font-ICIEL-RUKOLA;
             font-size: 32px;
-            letter-spacing: .8px;
+            letter-spacing: 2px;
             font-weight: 300;
-            margin-bottom: 3%;
+            line-height: 1;
+            margin-bottom: 1%;
         }
 
         .subtext {
@@ -67,7 +68,7 @@
         .content {
             .title {
                 font-size: calc((32 / 500) * 100vw);
-                letter-spacing: calc((.8 / 500) * 100vw);
+                letter-spacing: calc((2 / 500) * 100vw);
             }
             .subtext {
                 letter-spacing: calc((.8 / 500) * 100vw);

@@ -47,6 +47,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "ICIEL-RUKOLA";
+  src: url("../../assets/fonts/ICIEL-RUKOLA.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -289,9 +295,11 @@ header {
   align-items: center;
   perspective: 1000px;
 }
-.hero .content img.title {
-  max-width: 266px;
-  margin: 34% 0 2%;
+.hero .content .title {
+  margin: 20% 0 2%;
+  font-family: "ICIEL-RUKOLA", sans-serif;
+  font-size: 42px;
+  letter-spacing: 6px;
 }
 .hero .content .names {
   font-size: 115px;
@@ -317,6 +325,7 @@ header {
 }
 .hero .content .welcome {
   line-height: 1.8;
+  font-size: 15px;
 }
 .hero .content .welcome p {
   margin-bottom: 5%;
@@ -342,8 +351,12 @@ header {
   .hero .content .logo img {
     max-width: 18.8vw;
   }
-  .hero .content img.title {
-    max-width: 53.2vw;
+  .hero .content .title {
+    font-size: 8.4vw;
+    letter-spacing: 1.2vw;
+  }
+  .hero .content .welcome {
+    font-size: 3vw;
   }
   .hero .content .welcome p {
     letter-spacing: 0.2vw;
@@ -374,8 +387,9 @@ header {
 }
 .invite .content .title {
   font-size: 22px;
-  font-family: "MTD-Hangbird", sans-serif;
+  font-family: "ICIEL-RUKOLA", sans-serif;
   line-height: 1.5;
+  letter-spacing: 2px;
 }
 .invite .content .sub_text {
   letter-spacing: 1.2px;
@@ -407,6 +421,7 @@ header {
 @media (max-width: 500px) {
   .invite .content .title {
     font-size: 4.4vw;
+    letter-spacing: 0.4vw;
   }
   .invite .content .sub_text {
     letter-spacing: 0.24vw;
@@ -437,11 +452,12 @@ header {
   padding-top: 15%;
 }
 .timeline .content .title {
-  font-family: "MTD-Hangbird", sans-serif;
+  font-family: "ICIEL-RUKOLA", sans-serif;
   font-size: 32px;
-  letter-spacing: 0.8px;
+  letter-spacing: 2px;
   font-weight: 300;
-  margin-bottom: 3%;
+  line-height: 1;
+  margin-bottom: 1%;
 }
 .timeline .content .subtext {
   letter-spacing: 0.8px;
@@ -485,7 +501,7 @@ header {
 @media (max-width: 500px) {
   .timeline .content .title {
     font-size: 6.4vw;
-    letter-spacing: 0.16vw;
+    letter-spacing: 0.4vw;
   }
   .timeline .content .subtext {
     letter-spacing: 0.16vw;
@@ -516,10 +532,11 @@ header {
   padding: 20% 0 10%;
 }
 .dresscode .content h2 {
-  font-size: 32px;
-  font-family: "MTD-Hangbird", sans-serif;
+  font-size: 42px;
+  font-family: "ICIEL-RUKOLA", sans-serif;
   font-weight: 300;
   margin-bottom: 5%;
+  letter-spacing: 2px;
 }
 .dresscode .content .subtext {
   letter-spacing: 1.2px;
@@ -562,10 +579,8 @@ header {
 }
 @media (max-width: 500px) {
   .dresscode .content h2 {
-    font-size: 9.2vw;
-  }
-  .dresscode .content .subtext {
-    font-size: 2.8vw;
+    font-size: 8.4vw;
+    letter-spacing: 0.4vw;
   }
   .dresscode .content .colors-grid .item .color .circle {
     max-width: 7.6vw;
@@ -721,8 +736,10 @@ header {
 .rsvp .content .title {
   font-size: 32px;
   font-weight: 300;
-  font-family: "MTD-Hangbird", sans-serif;
-  margin-bottom: 2%;
+  font-family: "ICIEL-RUKOLA", sans-serif;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 1%;
 }
 .rsvp .content .subtext {
   letter-spacing: 0.8px;
@@ -940,6 +957,7 @@ header {
 @media (max-width: 500px) {
   .rsvp .content .title {
     font-size: 6.4vw;
+    letter-spacing: 0.4vw;
   }
   .rsvp .content .subtext {
     letter-spacing: 0.16vw;
@@ -986,8 +1004,10 @@ header {
 }
 .countdown .content .title {
   font-size: 32px;
-  font-family: "MTD-Hangbird", sans-serif;
-  margin-bottom: 2%;
+  letter-spacing: 3px;
+  font-family: "ICIEL-RUKOLA", sans-serif;
+  line-height: 1;
+  margin-bottom: 1%;
 }
 .countdown .content .sub_text {
   margin: 1% 0 5%;
@@ -1024,9 +1044,10 @@ header {
 }
 .countdown .content .invite_text {
   margin: 25% 0 8%;
-}
-.countdown .content .invite_text img {
-  max-width: 286px;
+  font-family: "ICIEL-RUKOLA", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 2px;
 }
 .countdown .content .cake_img img {
   max-width: 78px;
@@ -1034,6 +1055,7 @@ header {
 @media (max-width: 500px) {
   .countdown .content .title {
     font-size: 6.4vw;
+    letter-spacing: 0.6vw;
   }
   .countdown .content .sub_text {
     letter-spacing: 0.28vw;
@@ -1046,10 +1068,8 @@ header {
     letter-spacing: 0.2vw;
   }
   .countdown .content .invite_text {
-    margin: 25% 0 8%;
-  }
-  .countdown .content .invite_text img {
-    max-width: 57.2vw;
+    font-size: 4.8vw;
+    letter-spacing: 0.4vw;
   }
   .countdown .content .cake_img img {
     max-width: 15.6vw;

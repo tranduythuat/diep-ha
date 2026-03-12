@@ -13,8 +13,10 @@
         .title {
             font-size: 32px;
             font-weight: 300;
-            font-family: $font-MTD-Hangbird;
-            margin-bottom: 2%;
+            font-family: $font-ICIEL-RUKOLA;
+            letter-spacing: 2px;
+            line-height: 1;
+            margin-bottom: 1%;
         }
 
         .subtext {
@@ -292,6 +294,7 @@
         .content {
             .title {
                 font-size: calc((32 / 500) * 100vw);
+                letter-spacing: calc((2 / 500) * 100vw);
             }
 
             .subtext {

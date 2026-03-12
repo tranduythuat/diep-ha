@@ -643,6 +643,18 @@
     });
   }
 
+  function initCircleText() {
+    const textNgaychungdoi = new CircleType(document.getElementById('ngaychungdoi'));
+    textNgaychungdoi.radius(480);
+
+    const textInviteCountdown1 = new CircleType(document.getElementById('invite_countdown_text_1'));
+    textInviteCountdown1.radius(880)
+
+    const textInviteCountdown2 = new CircleType(document.getElementById('invite_countdown_text_2'));
+    textInviteCountdown2.radius(880)
+    // new CircleType(document.getElementById('demo1')).radius(480);
+  }
+
   /* ======================================================
        BOOTSTRAP
     ====================================================== */
@@ -659,6 +671,7 @@
     initFAQ();
     initRSVP();
     startCountdown(new Date("2026-04-14T16:00:00"));
+    initCircleText();
   }
 
   document.addEventListener("DOMContentLoaded", init);

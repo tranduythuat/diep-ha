@@ -11,9 +11,11 @@
         align-items: center;
         perspective: 1000px;
 
-        img.title {
-            max-width: 266px;
-            margin: 34% 0 2%;
+        .title {
+            margin: 20% 0 2%;
+            font-family: $font-ICIEL-RUKOLA;
+            font-size: 42px;
+            letter-spacing: 6px;
         }
 
         .names {
@@ -41,6 +43,7 @@
         
         .welcome {
             line-height: 1.8;
+            font-size: 15px;
             p {
                 margin-bottom: 5%;
                 letter-spacing: 1px;
@@ -71,12 +74,14 @@
                     max-width: calc((94 / 500) * 100vw);
                 }
             }
-            img.title {
-                max-width: calc((266 / 500) * 100vw);
+
+            .title {
+                font-size: calc((42 / 500) * 100vw);
+                letter-spacing:  calc((6 / 500) * 100vw);
             }
             
             .welcome {
-                // font-size: calc((10 / 500) * 100vw);
+                font-size: calc((15 / 500) * 100vw);
                 p {
                     letter-spacing: calc((1 / 500) * 100vw);
                 }

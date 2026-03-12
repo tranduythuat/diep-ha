@@ -8,8 +8,9 @@
         padding-top: 10%;
         .title {
             font-size: 22px;
-            font-family: $font-MTD-Hangbird;
+            font-family: $font-ICIEL-RUKOLA;
             line-height: 1.5;
+            letter-spacing: 2px;
         }
 
         .sub_text {
@@ -53,6 +54,7 @@
         .content {
             .title {
                 font-size: calc((22 / 500) * 100vw);
+                letter-spacing: calc((2 / 500) * 100vw);
             }
 
             .sub_text {

@@ -9,10 +9,11 @@
         padding: 20% 0 10%;
        
         h2 {
-            font-size: 32px;
-            font-family: $font-MTD-Hangbird;
+            font-size: 42px;
+            font-family: $font-ICIEL-RUKOLA;
             font-weight: 300;
             margin-bottom: 5%;
+            letter-spacing: 2px;
         }
 
         .subtext {
@@ -59,11 +60,12 @@
     @media (max-width:   500px) {
         .content {
             h2 {
-                font-size: calc((46 /   500) * 100vw);
+                font-size: calc((42 /   500) * 100vw);
+                letter-spacing: calc((2 /   500) * 100vw);
             }
 
             .subtext {
-                font-size: calc((14 /   500) * 100vw);
+                // font-size: calc((14 /   500) * 100vw);
             }
     
 
