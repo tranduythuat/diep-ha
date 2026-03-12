@@ -127,7 +127,10 @@
         initAnimations();
         // initDresscodeAnimation();
         // initTimeline();
+        initCircleText();
+
         ScrollTrigger.refresh();
+        
       }
     });
 
@@ -652,7 +655,6 @@
 
     const textInviteCountdown2 = new CircleType(document.getElementById('invite_countdown_text_2'));
     textInviteCountdown2.radius(880)
-    // new CircleType(document.getElementById('demo1')).radius(480);
   }
 
   /* ======================================================
@@ -671,7 +673,6 @@
     initFAQ();
     initRSVP();
     startCountdown(new Date("2026-04-14T16:00:00"));
-    initCircleText();
   }
 
   document.addEventListener("DOMContentLoaded", init);

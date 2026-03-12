@@ -293,13 +293,14 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  perspective: 1000px;
 }
 .hero .content .title {
-  margin: 20% 0 2%;
+  margin: 25% 0 2%;
   font-family: "ICIEL-RUKOLA", sans-serif;
   font-size: 42px;
   letter-spacing: 6px;
+  line-height: 1;
+  transform: translateZ(0);
 }
 .hero .content .names {
   font-size: 115px;
