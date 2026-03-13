@@ -18,6 +18,23 @@
             margin-top: 1%;
         }
 
+        .divider-time {
+            margin: 8% 0 3%;
+            img {
+                max-width: 42px;
+            }
+        }
+
+        .time_label {
+            margin-bottom: 3%;
+            letter-spacing: 1.2px;
+        }
+
+        .hours, .time {
+            font-size: 42px;
+            letter-spacing: 1px;
+        }
+
         .divider {
             margin: 8% 0 3%;
             img {
@@ -59,6 +76,21 @@
 
             .sub_text {
                 letter-spacing: calc((1.2 / 500) * 100vw);
+            }
+
+            .divider-time {
+                img {
+                    max-width: calc((42 / 500) * 100vw);
+                }
+            }
+    
+            .time_label {
+                letter-spacing: calc((1.2 / 500) * 100vw);
+            }
+    
+            .hours, .time {
+                font-size: calc((42 / 500) * 100vw);
+                letter-spacing: calc((1 / 500) * 100vw);
             }
 
             .divider {

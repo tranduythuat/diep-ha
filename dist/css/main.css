@@ -399,6 +399,20 @@ header {
   letter-spacing: 1.2px;
   margin-top: 1%;
 }
+.invite .content .divider-time {
+  margin: 8% 0 3%;
+}
+.invite .content .divider-time img {
+  max-width: 42px;
+}
+.invite .content .time_label {
+  margin-bottom: 3%;
+  letter-spacing: 1.2px;
+}
+.invite .content .hours, .invite .content .time {
+  font-size: 42px;
+  letter-spacing: 1px;
+}
 .invite .content .divider {
   margin: 8% 0 3%;
 }
@@ -429,6 +443,16 @@ header {
   }
   .invite .content .sub_text {
     letter-spacing: 0.24vw;
+  }
+  .invite .content .divider-time img {
+    max-width: 8.4vw;
+  }
+  .invite .content .time_label {
+    letter-spacing: 0.24vw;
+  }
+  .invite .content .hours, .invite .content .time {
+    font-size: 8.4vw;
+    letter-spacing: 0.2vw;
   }
   .invite .content .divider img {
     max-width: 8.4vw;

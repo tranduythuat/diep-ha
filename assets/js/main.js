@@ -684,11 +684,15 @@
   function initTimelineContent() {
     const params = new URLSearchParams(window.location.search);
     const timeline = params.get("timeline");
+    const hour = qs('.main_hour');
 
     if (timeline === "v2") {
       qsa(".hide-v2").forEach(el => {
         el.style.display = "none";
       });
+      if (hour) {
+        hour.textContent = "18:00"
+      }
     }
   }
 
