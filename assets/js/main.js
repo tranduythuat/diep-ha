@@ -334,6 +334,8 @@
     // Animate từng item theo thứ tự
     // =========================
     items.forEach((item, index) => {
+      if (item.classList.contains("hide-v2")) return;
+
       const icon = item.querySelector(".icon-animate");
       const time = item.querySelector(".time");
       // const overlap = index === 0 ? 0 : 0.2 + index * 0.1;
@@ -487,14 +489,25 @@
 
     const form = e.target;
     const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
+    const data = {
+      ...Object.fromEntries(formData.entries()),
+      dietary: formData.getAll("dietary")
+    }
 
+    
+    if (data.dietary.length) {
+      data.dietary = data.dietary.join(", ");
+    } else {
+      data.dietary = "";
+    }
+    
     const {
       name,
       confirm,
-      guest_number,
-      related,
-      phone,
+      guest_info,
+      email,
+      dietary,
+      note,
       wish,
     } = data;
 
@@ -537,7 +550,17 @@
       didOpen: () => Swal.showLoading(),
     });
 
-    const sheetURL = "/exec?sheet=nha-gai";
+    const SHEET_ENDPOINTS = {
+      vow: "https://script.google.com/macros/s/AKfycbype9If_6ntWvFG4hg0uGGS6vq-1QV1YHhmQaLX_MFVVGqXQH9m9wlJLzIpTH3FNiWoYQ/exec?sheet=vow",
+      not_vow: "https://script.google.com/macros/s/AKfycbype9If_6ntWvFG4hg0uGGS6vq-1QV1YHhmQaLX_MFVVGqXQH9m9wlJLzIpTH3FNiWoYQ/exec?sheet=not-vow",
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const timeline = params.get("timeline");
+    let sheetURL = SHEET_ENDPOINTS.vow;
+    if (timeline === "v2") {
+      sheetURL = SHEET_ENDPOINTS.not_vow
+    }
 
     try {
       const res = await fetch(sheetURL, {
@@ -546,9 +569,10 @@
         body: new URLSearchParams({
           name,
           confirm,
-          guest_number,
-          related,
-          phone,
+          guest_info,
+          email,
+          dietary,
+          note,
           wish,
         }),
       });
@@ -657,6 +681,17 @@
     textInviteCountdown2.radius(880)
   }
 
+  function initTimelineContent() {
+    const params = new URLSearchParams(window.location.search);
+    const timeline = params.get("timeline");
+
+    if (timeline === "v2") {
+      qsa(".hide-v2").forEach(el => {
+        el.style.display = "none";
+      });
+    }
+  }
+
   /* ======================================================
        BOOTSTRAP
     ====================================================== */
@@ -665,6 +700,7 @@
     gsap.registerPlugin(ScrollTrigger);
     initPage();
     initLetterAnimation();
+    initTimelineContent();
     // initAnimations();
     // initSwiper();
     // initMusic();
