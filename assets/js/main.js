@@ -9,6 +9,9 @@
   const qsa = (selector, parent = document) =>
     parent.querySelectorAll(selector);
 
+  const params = new URLSearchParams(window.location.search);
+  const timeline = params.get("timeline");
+
   /* ======================================================
        SWIPER
     ====================================================== */
@@ -334,7 +337,9 @@
     // Animate từng item theo thứ tự
     // =========================
     items.forEach((item, index) => {
-      if (item.classList.contains("hide-v2")) return;
+      if (timeline === "v2") {
+        if (item.classList.contains("hide-v2")) return;
+      }
 
       const icon = item.querySelector(".icon-animate");
       const time = item.querySelector(".time");
@@ -555,8 +560,6 @@
       not_vow: "https://script.google.com/macros/s/AKfycbype9If_6ntWvFG4hg0uGGS6vq-1QV1YHhmQaLX_MFVVGqXQH9m9wlJLzIpTH3FNiWoYQ/exec?sheet=not-vow",
     };
 
-    const params = new URLSearchParams(window.location.search);
-    const timeline = params.get("timeline");
     let sheetURL = SHEET_ENDPOINTS.vow;
     if (timeline === "v2") {
       sheetURL = SHEET_ENDPOINTS.not_vow

@@ -31,7 +31,7 @@
         }
 
         .hours, .time {
-            font-size: 42px;
+            font-size: 38px;
             letter-spacing: 1px;
         }
 
@@ -89,7 +89,7 @@
             }
     
             .hours, .time {
-                font-size: calc((42 / 500) * 100vw);
+                font-size: calc((38 / 500) * 100vw);
                 letter-spacing: calc((1 / 500) * 100vw);
             }
 
