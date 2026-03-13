@@ -687,7 +687,7 @@
   function initTimelineContent() {
     const params = new URLSearchParams(window.location.search);
     const timeline = params.get("timeline");
-    const hour = qs('.main_hour');
+    const hour = qs('#hours-bold');
 
     if (timeline === "v2") {
       qsa(".hide-v2").forEach(el => {

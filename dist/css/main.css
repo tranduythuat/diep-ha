@@ -400,10 +400,18 @@ header {
   margin-top: 1%;
 }
 .invite .content .divider-time {
-  margin: 8% 0 3%;
+  margin: 8% auto 3%;
+  max-width: 42px;
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #dddcd9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 .invite .content .divider-time img {
-  max-width: 42px;
+  max-width: 20px;
 }
 .invite .content .time_label {
   margin-bottom: 3%;

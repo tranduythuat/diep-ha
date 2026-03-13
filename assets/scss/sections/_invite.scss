@@ -19,9 +19,15 @@
         }
 
         .divider-time {
-            margin: 8% 0 3%;
+            margin: 8% auto 3%;
+            max-width: 42px;
+            width: 100%;
+            aspect-ratio: 1;
+            background-color: #dddcd9;
+            @include flex-center;
+            border-radius: 50%;
             img {
-                max-width: 42px;
+                max-width: 20px;
             }
         }
 
@@ -96,7 +102,7 @@
                     max-width: calc((42 / 500) * 100vw);
                 }
             }
-            
+
             .location_label,  .name {
                 letter-spacing: calc((1.5 / 500) * 100vw);
             }
