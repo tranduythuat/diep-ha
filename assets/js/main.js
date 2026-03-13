@@ -688,6 +688,7 @@
     const params = new URLSearchParams(window.location.search);
     const timeline = params.get("timeline");
     const hour = qs('#hours-bold');
+    const welcomeTime = qs('#welcome-time');
 
     if (timeline === "v2") {
       qsa(".hide-v2").forEach(el => {
@@ -695,6 +696,9 @@
       });
       if (hour) {
         hour.textContent = "18:00"
+      }
+      if(welcomeTime) {
+        welcomeTime.textContent = "18:00"
       }
     }
   }
