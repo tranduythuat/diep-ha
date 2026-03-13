@@ -84,8 +84,9 @@
             }
 
             .divider-time {
+                max-width: calc((42 / 500) * 100vw);
                 img {
-                    max-width: calc((42 / 500) * 100vw);
+                    max-width: calc((20 / 500) * 100vw);
                 }
             }
     

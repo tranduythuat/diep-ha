@@ -451,8 +451,11 @@ header {
   .invite .content .sub_text {
     letter-spacing: 0.24vw;
   }
-  .invite .content .divider-time img {
+  .invite .content .divider-time {
     max-width: 8.4vw;
+  }
+  .invite .content .divider-time img {
+    max-width: 4vw;
   }
   .invite .content .time_label {
     letter-spacing: 0.3vw;
