@@ -407,11 +407,10 @@ header {
 }
 .invite .content .time_label {
   margin-bottom: 3%;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.5px;
 }
 .invite .content .hours, .invite .content .time {
-  font-size: 38px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 .invite .content .divider {
   margin: 8% 0 3%;
@@ -448,11 +447,10 @@ header {
     max-width: 8.4vw;
   }
   .invite .content .time_label {
-    letter-spacing: 0.24vw;
+    letter-spacing: 0.3vw;
   }
   .invite .content .hours, .invite .content .time {
-    font-size: 7.6vw;
-    letter-spacing: 0.2vw;
+    letter-spacing: 0.3vw;
   }
   .invite .content .divider img {
     max-width: 8.4vw;

@@ -27,12 +27,11 @@
 
         .time_label {
             margin-bottom: 3%;
-            letter-spacing: 1.2px;
+            letter-spacing: 1.5px;
         }
 
         .hours, .time {
-            font-size: 38px;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
         }
 
         .divider {
@@ -85,12 +84,11 @@
             }
     
             .time_label {
-                letter-spacing: calc((1.2 / 500) * 100vw);
+                letter-spacing: calc((1.5 / 500) * 100vw);
             }
     
             .hours, .time {
-                font-size: calc((38 / 500) * 100vw);
-                letter-spacing: calc((1 / 500) * 100vw);
+                letter-spacing: calc((1.5 / 500) * 100vw);
             }
 
             .divider {
@@ -98,6 +96,7 @@
                     max-width: calc((42 / 500) * 100vw);
                 }
             }
+            
             .location_label,  .name {
                 letter-spacing: calc((1.5 / 500) * 100vw);
             }
